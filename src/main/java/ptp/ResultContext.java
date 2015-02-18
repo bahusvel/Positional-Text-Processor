@@ -1,6 +1,7 @@
 package ptp;
 
 import java.util.Collection;
+import java.util.Optional;
 
 /**
  * Created by denislavrov on 2/17/15.
@@ -26,9 +27,12 @@ public class ResultContext extends Context {
         return from(context, begin, context.rawContext.length(), orderReverse);
     }
 
-    boolean contains(AbstractTerm term){
-        return false;
+    ContextTerm firstByDescriptor(TermDescriptor descriptor){
+        for (ContextTerm contextTerm : descriptor.findAllTerms(this)) {
+            return contextTerm;
+        }
+        return null;
+
     }
-    ContextTerm firstByDescriptor(TermDescriptor descriptor){return null;}
     Collection<ContextTerm> closest(int distance){return null;}
 }

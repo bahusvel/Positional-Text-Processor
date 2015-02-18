@@ -12,7 +12,7 @@ public class Context {
     Context parentContext = null;
     int position;
     String rawContext;
-    HashMap<TERM_TYPE, Collection<ContextTerm>> terms = new HashMap<>();
+    HashMap<TermDescriptor, Collection<ContextTerm>> terms = new HashMap<>();
 
     public Context(String rawContext) {
         this.rawContext = rawContext;
@@ -29,7 +29,7 @@ public class Context {
     }
 
     public Collection<ContextTerm> tokenizeBy(TermDescriptor descriptor){
-        return terms.computeIfAbsent(descriptor.descriptorType, type -> descriptor.findAllTerms(this));
+        return terms.computeIfAbsent(descriptor, desc -> desc.findAllTerms(this));
     }
 
     @Override

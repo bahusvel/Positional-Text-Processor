@@ -1,6 +1,7 @@
 package ptp;
 
 import ptp.AbstractTerm.TERM_TYPE;
+import ptp.descriptors.WordDescriptor;
 
 import java.util.Collection;
 

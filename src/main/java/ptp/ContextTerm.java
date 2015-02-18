@@ -26,33 +26,38 @@ public class ContextTerm extends AbstractTerm{
         return ResultContext.from(context, 0, position, true);
     }
 
-    private ContextTerm getLineForTerm(){
-        Collection<ContextTerm> lines = context.tokenizeBy(LineDescriptor.INSTANCE);
-        ContextTerm lineContext = null;
-        for (ContextTerm line : lines) {
-            if (line.position + line.rawTerm.length() > position){
-                lineContext = line;
-                break;
+
+    public boolean contains(ContextTerm term){
+        return position <= term.position && position + rawTerm.length() >= term.position + term.rawTerm.length();
+    }
+
+    public ContextTerm getParentByDescriptor(TermDescriptor parent){
+        Collection<ContextTerm> parentTerms = context.tokenizeBy(parent);
+        for (ContextTerm parentTerm : parentTerms) {
+            if (parentTerm.contains(this)){
+                return parentTerm;
             }
         }
-        assert lineContext != null;
-        return lineContext;
+        return null;
     }
 
     public ResultContext right(){
-        ContextTerm lineContext = getLineForTerm();
+        ContextTerm lineContext = getParentByDescriptor(LineDescriptor.INSTANCE);
         return ResultContext.from(context, position + rawTerm.length(), lineContext.position + lineContext.rawTerm.length(), false);
     }
     public ResultContext left(){
-        ContextTerm lineContext = getLineForTerm();
+        ContextTerm lineContext = getParentByDescriptor(LineDescriptor.INSTANCE);
         return ResultContext.from(context, lineContext.position, position, true);
     }
     public ResultContext above(){
-        ContextTerm lineContext = getLineForTerm();
+        ContextTerm lineContext = getParentByDescriptor(LineDescriptor.INSTANCE);
         return ResultContext.from(context, 0, lineContext.position, true);
     }
     public ResultContext below(){
-        ContextTerm lineContext = getLineForTerm();
+        ContextTerm lineContext = getParentByDescriptor(LineDescriptor.INSTANCE);
         return ResultContext.from(context, lineContext.position + lineContext.rawTerm.length(), false);
+    }
+    public ResultContext between(ContextTerm another){
+        return ResultContext.from(context, position + rawTerm.length(), another.position, false);
     }
 }

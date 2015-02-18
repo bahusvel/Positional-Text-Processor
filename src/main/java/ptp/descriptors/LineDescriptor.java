@@ -8,6 +8,6 @@ import ptp.AbstractTerm.TERM_TYPE;
 public class LineDescriptor extends RegexDescriptor{
     public static LineDescriptor INSTANCE = new LineDescriptor();
     public LineDescriptor() {
-        super("[^\\n]++", TERM_TYPE.WORD);
+        super("[^\\n]++", TERM_TYPE.LINE);
     }
 }

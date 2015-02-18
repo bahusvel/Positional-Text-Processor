@@ -1,6 +1,7 @@
 import ptp.AbstractTerm.TERM_TYPE;
 import ptp.Context;
 import ptp.ContextTerm;
+import ptp.descriptors.LineDescriptor;
 import ptp.descriptors.RegexDescriptor;
 
 /**
@@ -14,7 +15,7 @@ public class UseCase {
         Context context = new Context(rawContext);
         RegexDescriptor descriptor = new RegexDescriptor("Oranges", TERM_TYPE.WORD);
         for (ContextTerm contextTerm : descriptor.findAllTerms(context)) {
-            System.out.println(contextTerm.before());
+            System.out.println(contextTerm.getParentByDescriptor(LineDescriptor.INSTANCE));
         }
     }
 }
