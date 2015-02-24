@@ -27,7 +27,7 @@ public class ResultContext extends Context {
         return from(context, begin, context.rawContext.length(), orderReverse);
     }
 
-    ContextTerm firstByDescriptor(TermDescriptor descriptor){
+    public ContextTerm firstByDescriptor(TermDescriptor descriptor){
         for (ContextTerm contextTerm : descriptor.findAllTerms(this)) {
             return contextTerm;
         }

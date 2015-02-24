@@ -5,6 +5,7 @@ import ptp.Context;
 import ptp.ContextTerm;
 import ptp.TermDescriptor;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 /**
@@ -20,11 +21,21 @@ public class RawDescriptor extends TermDescriptor {
 
     @Override
     public boolean validateTerm(String term) {
-        return term.equals(rawTerm);
+        return false;
     }
 
     @Override
     public Collection<ContextTerm> findAllTerms(Context context) {
-        return null;
+        ArrayList<ContextTerm> contextTerms = new ArrayList<>();
+        String deref = context.getRawContext();
+        int lastIndex = 0;
+        while (true){
+            lastIndex = deref.indexOf(rawTerm, lastIndex);
+            if (lastIndex != -1) {
+                contextTerms.add(new ContextTerm(descriptorType, this, context, lastIndex, rawTerm));
+                lastIndex += rawTerm.length();
+            } else break;
+        }
+        return contextTerms;
     }
 }
