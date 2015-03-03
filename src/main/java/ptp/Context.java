@@ -34,40 +34,6 @@ public class Context {
         return terms.computeIfAbsent(descriptor, desc -> desc.findAllTerms(this));
     }
 
-    public static Optional<Context> commonParent(Context a, Context b){
-        ArrayList<Context> aParents = new ArrayList<>();
-        ArrayList<Context> bParents = new ArrayList<>();
-        Context aParent = a.parentContext;
-        while (aParent != null){
-            aParents.add(aParent);
-            aParent = aParent.parentContext;
-        }
-        Context bParent = b.parentContext;
-        while (bParent != null){
-            bParents.add(bParent);
-            bParent = bParent.parentContext;
-        }
-        int apos = -1;
-        int bpos = -1;
-        for (Context parent : aParents) {
-            if (bParents.indexOf(parent) >= 0) {
-                apos = bParents.indexOf(parent);
-                break;
-            }
-        }
-        for (Context parent : bParents) {
-            if (aParents.indexOf(parent) >= 0) {
-                bpos = aParents.indexOf(parent);
-                break;
-            }
-        }
-        if (apos <= bpos && apos >= 0)
-            return Optional.of(aParents.get(apos));
-        else if (bpos < apos && bpos >= 0)
-            return Optional.of(bParents.get(bpos));
-        return Optional.empty();
-    }
-
     public static Optional<Context> fastLCA(Context p, Context q){
         int h1 = p.getHeight();
         int h2 = q.getHeight();

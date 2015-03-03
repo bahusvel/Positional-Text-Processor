@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37559e2b-89b4-435c-96e3-2db6b92ef4d2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ptp/AbstractTerm$TERM_TYPE.class" afterPath="$PROJECT_DIR$/target/classes/ptp/AbstractTerm$TERM_TYPE.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ptp/Context.class" afterPath="$PROJECT_DIR$/target/classes/ptp/Context.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ptp/ResultContext.class" afterPath="$PROJECT_DIR$/target/classes/ptp/ResultContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/UseCase.class" afterPath="$PROJECT_DIR$/target/test-classes/UseCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ptp/AbstractTerm.java" afterPath="$PROJECT_DIR$/src/main/java/ptp/AbstractTerm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ptp/Context.java" afterPath="$PROJECT_DIR$/src/main/java/ptp/Context.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ptp/ContextTerm.java" afterPath="$PROJECT_DIR$/src/main/java/ptp/ContextTerm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ptp/ResultContext.java" afterPath="$PROJECT_DIR$/src/main/java/ptp/ResultContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ptp/TermDescriptor.java" afterPath="$PROJECT_DIR$/src/main/java/ptp/TermDescriptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/UseCase.java" afterPath="$PROJECT_DIR$/src/test/java/UseCase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Context.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Context.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ptp/Context.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45094937" vertical-offset="225" max-vertical-offset="1920">
-              <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1410">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#422#423#0" expanded="true" />
@@ -50,13 +52,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContextTerm.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ContextTerm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ptp/ContextTerm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
-              <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+            <state vertical-scroll-proportion="1.0473933" vertical-offset="237" max-vertical-offset="1110">
+              <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UseCase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/UseCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TermDescriptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ptp/TermDescriptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,20 +94,6 @@
               <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="class#TERM_TYPE#0;class#AbstractTerm#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ptp/ResultContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="885">
-              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1587#1588#0" expanded="true" />
-                <element signature="e#1614#1615#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,14 +114,14 @@
         <option value="$PROJECT_DIR$/src/main/java/ptp/descriptors/WordDescriptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/ptp/Result.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/ptp/TermDescriptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ptp/ContextTerm.java" />
         <option value="$PROJECT_DIR$/src/main/java/ptp/descriptors/LineDescriptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/ptp/descriptors/RawDescriptor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/UseCase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ptp/Context.java" />
         <option value="$PROJECT_DIR$/src/main/java/ptp/AbstractTerm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ptp/Context.java" />
         <option value="$PROJECT_DIR$/src/main/java/ptp/ResultContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ptp/ContextTerm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ptp/TermDescriptor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/UseCase.java" />
       </list>
     </option>
   </component>
@@ -299,7 +310,7 @@
       <recent name="ptp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Context">
+  <component name="RunManager" selected="Application.UseCase">
     <configuration default="false" name="UseCase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="UseCase" />
@@ -614,8 +625,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Context" />
-        <item index="1" class="java.lang.String" itemvalue="Application.UseCase" />
+        <item index="0" class="java.lang.String" itemvalue="Application.UseCase" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Context" />
         <item index="2" class="java.lang.String" itemvalue="Application.ResultContext" />
         <item index="3" class="java.lang.String" itemvalue="Application.SentenceDescriptor" />
       </list>
@@ -642,7 +653,7 @@
       <workItem from="1424759756372" duration="1637000" />
       <workItem from="1424944244099" duration="4682000" />
       <workItem from="1424950330667" duration="570000" />
-      <workItem from="1425413427037" duration="943000" />
+      <workItem from="1425413427037" duration="2012000" />
     </task>
     <task id="LOCAL-00001" summary="Pretty much done&#10;">
       <created>1424223919319</created>
@@ -650,11 +661,17 @@
       <option name="project" value="LOCAL" />
       <updated>1424223919320</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="LCA algorithms">
+      <created>1425415123754</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1425415123754</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22449000" />
+    <option name="totallyTimeSpent" value="23518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-113" width="1920" height="1080" extended-state="0" />
@@ -666,22 +683,22 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907802" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16400427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32825205" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -700,7 +717,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Pretty much done&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pretty much done&#10;" />
+    <MESSAGE value="LCA algorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="LCA algorithms" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -717,8 +735,6 @@
           <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -727,9 +743,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -776,8 +790,6 @@
           <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -806,9 +818,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="480">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -843,8 +853,6 @@
           <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -873,9 +881,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="480">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -910,8 +916,6 @@
           <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -940,9 +944,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="390">
           <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -969,8 +971,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -991,9 +991,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="390">
           <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,8 +1018,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1042,9 +1038,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="390">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,8 +1065,6 @@
           <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1143,32 +1135,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/UseCase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ptp/ResultContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4888889" vertical-offset="0" max-vertical-offset="675">
-          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
+        <state vertical-scroll-proportion="0.8578199" vertical-offset="57" max-vertical-offset="975">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ptp/TermDescriptor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ptp/Context.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09414226" vertical-offset="0" max-vertical-offset="956">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ptp/ResultContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="885">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1410">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1183,24 +1167,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ptp/ContextTerm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ptp/TermDescriptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="975">
-          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ptp/Context.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/UseCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45094937" vertical-offset="225" max-vertical-offset="1920">
-          <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ptp/ContextTerm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0473933" vertical-offset="237" max-vertical-offset="1110">
+          <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
           </folding>
         </state>
       </provider>

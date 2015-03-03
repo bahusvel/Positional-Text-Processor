@@ -1,5 +1,6 @@
 package ptp;
 
+import com.sun.xml.internal.xsom.impl.WildcardImpl.Other;
 import ptp.descriptors.LineDescriptor;
 
 import java.util.Collection;
@@ -58,6 +59,14 @@ public class ContextTerm extends AbstractTerm{
         return ResultContext.from(context, lineContext.position + lineContext.rawTerm.length(), false);
     }
     public ResultContext between(ContextTerm another){
-        return ResultContext.from(context, position + rawTerm.length(), another.position, false);
+        int begin, end;
+        if (position <= another.position){
+            begin = position + rawTerm.length();
+            end = another.position;
+        }else{
+            begin = another.position + another.rawTerm.length();
+            end = position;
+        }
+        return ResultContext.from(context, begin, end, false);
     }
 }

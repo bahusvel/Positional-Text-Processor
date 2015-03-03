@@ -1,6 +1,7 @@
 package ptp;
 
 import ptp.AbstractTerm.TERM_TYPE;
+import sun.reflect.generics.scope.DummyScope;
 
 import java.util.*;
 
@@ -46,8 +47,13 @@ public class ResultContext extends Context {
 
     }
 
-    Collection<ContextTerm> byDistance(TermDescriptor descriptor, TermDescriptor unit){
-        return null;
+    public HashMap<ContextTerm, Integer> byDistance(TermDescriptor descriptor, TermDescriptor unit){
+        HashMap<ContextTerm, Integer> distanceMap = new HashMap<>();
+        for (ContextTerm contextTerm : descriptor.findAllTerms(this)) {
+            ResultContext mid = ResultContext.from(this, 0, contextTerm.position, false);
+            distanceMap.put(contextTerm, unit.findAllTerms(mid).size());
+        }
+        return distanceMap;
     }
 
     public static void main(String[] args) {
