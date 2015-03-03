@@ -6,7 +6,7 @@ import ptp.descriptors.RawDescriptor;
  * Created by denislavrov on 2/17/15.
  */
 public class AbstractTerm {
-    public enum TERM_TYPE {LINE, WORD, SENTENCE, PHRASE}
+    public enum TERM_TYPE {LINE, WORD, SENTENCE, CHARACHTER, PHRASE}
     TERM_TYPE termType;
     String rawTerm;
     TermDescriptor descriptor;

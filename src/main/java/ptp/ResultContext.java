@@ -1,7 +1,8 @@
 package ptp;
 
-import java.util.Collection;
-import java.util.Optional;
+import ptp.AbstractTerm.TERM_TYPE;
+
+import java.util.*;
 
 /**
  * Created by denislavrov on 2/17/15.
@@ -27,6 +28,16 @@ public class ResultContext extends Context {
         return from(context, begin, context.rawContext.length(), orderReverse);
     }
 
+    public ResultContext intersect(Context other){
+        Optional<Context> parent = fastLCA(this, other);
+        if (parent.isPresent()){
+            int maxBegin = Math.max(other.position, position);
+            int minEnd =  Math.min(other.position + other.rawContext.length(), position + rawContext.length());
+            return from(parent.get(), maxBegin, minEnd, false);
+        }
+        return null;
+    }
+
     public ContextTerm firstByDescriptor(TermDescriptor descriptor){
         for (ContextTerm contextTerm : descriptor.findAllTerms(this)) {
             return contextTerm;
@@ -34,5 +45,11 @@ public class ResultContext extends Context {
         return null;
 
     }
-    Collection<ContextTerm> closest(int distance){return null;}
+
+    Collection<ContextTerm> byDistance(TermDescriptor descriptor, TermDescriptor unit){
+        return null;
+    }
+
+    public static void main(String[] args) {
+    }
 }
