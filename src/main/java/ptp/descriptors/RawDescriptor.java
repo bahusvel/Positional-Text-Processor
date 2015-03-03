@@ -32,7 +32,7 @@ public class RawDescriptor extends TermDescriptor {
         while (true){
             lastIndex = deref.indexOf(rawTerm, lastIndex);
             if (lastIndex != -1) {
-                contextTerms.add(new ContextTerm(descriptorType, this, context, lastIndex, rawTerm));
+                contextTerms.add(new ContextTerm(this, context, lastIndex, rawTerm));
                 lastIndex += rawTerm.length();
             } else break;
         }

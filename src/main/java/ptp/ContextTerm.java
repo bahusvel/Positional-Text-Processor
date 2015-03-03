@@ -1,6 +1,5 @@
 package ptp;
 
-import com.sun.xml.internal.xsom.impl.WildcardImpl.Other;
 import ptp.descriptors.LineDescriptor;
 
 import java.util.Collection;
@@ -12,8 +11,8 @@ public class ContextTerm extends AbstractTerm{
     final Context context;
     int position = 0;
 
-    public ContextTerm(TERM_TYPE termType, TermDescriptor descriptor, Context context, int position, String rawTerm) {
-        super(termType, descriptor);
+    public ContextTerm(TermDescriptor descriptor, Context context, int position, String rawTerm) {
+        super(descriptor.descriptorType, descriptor);
         this.context = context;
         this.position = position;
         super.rawTerm = rawTerm;

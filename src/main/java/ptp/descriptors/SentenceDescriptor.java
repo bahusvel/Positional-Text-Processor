@@ -34,7 +34,7 @@ public class SentenceDescriptor extends TermDescriptor {
         for (int end = iterator.next();
              end != BreakIterator.DONE;
              start = end, end = iterator.next()) {
-             contextTerms.add(new ContextTerm(TERM_TYPE.SENTENCE, this, context, start, source.substring(start, end)));
+             contextTerms.add(new ContextTerm(this, context, start, source.substring(start, end)));
         }
         return contextTerms;
     }

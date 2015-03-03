@@ -39,7 +39,7 @@ public class RegexDescriptor extends TermDescriptor {
         ArrayList<ContextTerm> contextTerms = new ArrayList<>();
         Matcher matcher = pattern.matcher(context.getRawContext());
         while (matcher.find()){
-            contextTerms.add(new ContextTerm(descriptorType, this, context, matcher.start(), matcher.group()));
+            contextTerms.add(new ContextTerm(this, context, matcher.start(), matcher.group()));
         }
         return contextTerms;
     }

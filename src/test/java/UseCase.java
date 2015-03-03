@@ -1,10 +1,7 @@
 import ptp.AbstractTerm.TERM_TYPE;
 import ptp.Context;
 import ptp.ContextTerm;
-import ptp.descriptors.LineDescriptor;
-import ptp.descriptors.RawDescriptor;
-import ptp.descriptors.RegexDescriptor;
-import ptp.descriptors.WordDescriptor;
+import ptp.descriptors.*;
 
 /**
  * Created by denislavrov on 2/17/15.
@@ -20,9 +17,9 @@ public class UseCase {
                 "4:40PM Domain Adaptation Bounds for Multiple Expert Systems Under Concept Room Drift Gregory Ditzler, Gail Rosen and Robi Polikar";
         Context context = new Context(rawContext);
         RawDescriptor descriptor = new RawDescriptor(TERM_TYPE.WORD, "Room");
-        RawDescriptor water = new RawDescriptor(TERM_TYPE.WORD, "Waterschoot");
-        for (ContextTerm contextTerm : descriptor.findAllTerms(context)) {
-            System.out.println(contextTerm.between(water.findFirst(context)));
+        CharDescriptor charDescriptor = new CharDescriptor();
+        for (ContextTerm contextTerm : charDescriptor.findAllTerms(context)) {
+            System.out.println(contextTerm);
         }
     }
 }
