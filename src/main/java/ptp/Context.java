@@ -20,6 +20,10 @@ public class Context {
         this.rawContext = rawContext;
     }
 
+    protected Context(){
+        rawContext = "";
+    }
+
     protected Context(Context parentContext, int position, String rawContext) {
         this.parentContext = parentContext;
         this.position = position;
@@ -58,6 +62,15 @@ public class Context {
         return Optional.empty();
     }
 
+    public static Optional<Context> parentContext(Context... contexts){
+        Context parent = contexts[0];
+        for (Context context : contexts) {
+            parent = fastLCA(context, parent).get();
+            if (parent == null) break;
+        }
+        return Optional.ofNullable(parent);
+    }
+
     private int getHeight(){
         int height = 0;
         Context p = this;
@@ -80,11 +93,12 @@ public class Context {
     public static void main(String[] args) {
         Context test1 = new Context("bla bla");
         Context test2 = new Context("bla");
+        Context test3 = new Context("Denis");
         Context parent1 = new Context("bla bla bla");
         Context parent2 = new Context("bla bla");
         test1.parentContext = parent1;
         test2.parentContext = parent2;
         parent2.parentContext = parent1;
-        System.out.println(fastLCA(test1, test2));
+        System.out.println(parentContext(test1, test2, test3));
     }
 }

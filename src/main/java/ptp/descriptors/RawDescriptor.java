@@ -20,11 +20,6 @@ public class RawDescriptor extends TermDescriptor {
     }
 
     @Override
-    public boolean validateTerm(String term) {
-        return false;
-    }
-
-    @Override
     public Collection<ContextTerm> findAllTerms(Context context) {
         ArrayList<ContextTerm> contextTerms = new ArrayList<>();
         String deref = context.getRawContext();

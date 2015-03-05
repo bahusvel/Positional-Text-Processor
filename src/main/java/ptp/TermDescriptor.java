@@ -15,7 +15,6 @@ public abstract class TermDescriptor {
         this.descriptorType = descriptorType;
     }
 
-    public abstract boolean validateTerm(String term);
     public abstract Collection<ContextTerm> findAllTerms(Context context);
     public ContextTerm findFirst(Context context){
         return findAllTerms(context).iterator().next();

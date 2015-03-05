@@ -30,11 +30,6 @@ public class RegexDescriptor extends TermDescriptor {
     }
 
     @Override
-    public boolean validateTerm(String term) {
-        return term.matches(rawRegex);
-    }
-
-    @Override
     public Collection<ContextTerm> findAllTerms(Context context) {
         ArrayList<ContextTerm> contextTerms = new ArrayList<>();
         Matcher matcher = pattern.matcher(context.getRawContext());

@@ -21,11 +21,6 @@ public class SentenceDescriptor extends TermDescriptor {
     }
 
     @Override
-    public boolean validateTerm(String term) {
-        return false;
-    }
-
-    @Override
     public Collection<ContextTerm> findAllTerms(Context context) {
         ArrayList<ContextTerm> contextTerms = new ArrayList<>();
         String source = context.getRawContext();

@@ -19,11 +19,6 @@ public class CharDescriptor extends TermDescriptor {
     }
 
     @Override
-    public boolean validateTerm(String term) {
-        return false;
-    }
-
-    @Override
     public Collection<ContextTerm> findAllTerms(Context context) {
         ArrayList<ContextTerm> terms = new ArrayList<>();
         char[] chars = context.getRawContext().toCharArray();
