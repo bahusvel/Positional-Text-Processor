@@ -31,6 +31,11 @@ public class ContextTerm extends AbstractTerm{
         return position <= term.position && position + rawTerm.length() >= term.position + term.rawTerm.length();
     }
 
+    public int distanceTo(ContextTerm another, TermDescriptor unit){
+        ResultContext betweenContext = between(another);
+        return unit.findAllTerms(betweenContext).size();
+    }
+
     public ContextTerm getParentByDescriptor(TermDescriptor parent){
         Collection<ContextTerm> parentTerms = context.tokenizeBy(parent);
         for (ContextTerm parentTerm : parentTerms) {

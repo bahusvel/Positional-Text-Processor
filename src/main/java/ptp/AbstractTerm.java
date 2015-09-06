@@ -23,6 +23,10 @@ public class AbstractTerm {
         descriptor = new RawDescriptor(termType, rawTerm);
     }
 
+    public String getRawTerm() {
+        return rawTerm;
+    }
+
     @Override
     public String toString() {
         return "AbstractTerm{" +
