@@ -22,5 +22,10 @@
     <orderEntry type="library" name="Maven: com.googlecode.efficient-java-matrix-library:ejml:0.23" level="project" />
     <orderEntry type="library" name="Maven: javax.json:javax.json-api:1.0" level="project" />
     <orderEntry type="library" name="Maven: edu.stanford.nlp:stanford-corenlp:models:3.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:log4j-over-slf4j:1.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:4.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-analyzers-common:4.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.7.2" level="project" />
   </component>
 </module>
